@@ -1,0 +1,8 @@
+AND(
+	!ISNEW(),
+	RecordType.DeveloperName == 'Some_Record_Type',
+	OR(
+		ISBLANK(TargetDate__c),
+		TargetDate__c < TODAY()
+	)
+)

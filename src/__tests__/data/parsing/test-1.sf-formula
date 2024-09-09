@@ -1,0 +1,1 @@
+Account.MyCustomLookup__r.Name = 'Henry Wildcat' && NOT(ISBLANK(Account.SomeField__c))

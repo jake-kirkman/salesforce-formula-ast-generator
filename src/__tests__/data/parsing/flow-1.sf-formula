@@ -1,0 +1,13 @@
+IF(
+  !ISBLANK(Text({!GetRecord.IsChange__c})), 
+  Text({!GetRecord.IsChange__c}), 
+  IF(
+    !ISBLANK({!Some_Flow_Variable}), 
+    {!Some_Flow_Variable}, 
+    IF(
+      !ISBLANK({!Some_Other_Flow_Variable}), 
+      {!Some_Other_Flow_Variable},
+      'Unknown'
+    )
+  )
+)

@@ -1,0 +1,20 @@
+OR(
+  AND(
+    NOT(ISPICKVAL(Status,'Open')),
+    NOT(ISBLANK(Phone)),
+    OR(
+      CONTAINS( $CustomMetadata.SomeCustomMetadata__mdt.Record1.SomeFieldWithNumbers__c, Phone),
+      CONTAINS( $CustomMetadata.SomeCustomMetadata__mdt.Record2.SomeFieldWithNumbers__c, Phone),
+      CONTAINS( $CustomMetadata.SomeCustomMetadata__mdt.Record3.SomeFieldWithNumbers__c, Phone)
+    )
+  ),
+  AND(
+    NOT(ISPICKVAL(Status,'Open')),
+    NOT(ISBLANK(MobilePhone)),
+    OR(
+      CONTAINS( $CustomMetadata.SomeCustomMetadata__mdt.Record1.SomeFieldWithNumbers__c, MobilePhone),
+      CONTAINS( $CustomMetadata.SomeCustomMetadata__mdt.Record2.SomeFieldWithNumbers__c, MobilePhone),
+      CONTAINS( $CustomMetadata.SomeCustomMetadata__mdt.Record3.SomeFieldWithNumbers__c, MobilePhone)
+    )
+  )
+)

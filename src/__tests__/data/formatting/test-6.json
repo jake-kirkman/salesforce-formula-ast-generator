@@ -1,0 +1,496 @@
+{
+  "Type": "ACTION",
+  "Token": {
+    "Type": "FUNC_AND",
+    "Lexeme": "AND",
+    "Line": 1,
+    "Start": 0,
+    "End": 3
+  },
+  "Parameters": {
+    "Type": "GROUPING",
+    "Members": [
+      {
+        "Type": "GROUPMEMBER",
+        "Value": {
+          "Type": "BINARY",
+          "Left": {
+            "Type": "BINARY",
+            "Left": {
+              "Type": "IDENTIFIER",
+              "Parts": [
+                {
+                  "Type": "IDENTIFIER",
+                  "Lexeme": "Field__c",
+                  "Line": 2,
+                  "Start": 8,
+                  "End": 16
+                }
+              ],
+              "Value": "Field__c"
+            },
+            "Operator": {
+              "Type": "EXPONENTIATION",
+              "Lexeme": "^",
+              "Line": 2,
+              "Start": 17,
+              "End": 18
+            },
+            "Right": {
+              "Type": "LITERAL",
+              "Value": 2
+            }
+          },
+          "Operator": {
+            "Type": "GREATER",
+            "Lexeme": ">",
+            "Line": 2,
+            "Start": 21,
+            "End": 22
+          },
+          "Right": {
+            "Type": "LITERAL",
+            "Value": 10
+          }
+        }
+      },
+      {
+        "Type": "GROUPMEMBER",
+        "Connector": {
+          "Type": "COMMA",
+          "Lexeme": ",",
+          "Line": 2,
+          "Start": 25,
+          "End": 26
+        },
+        "Value": {
+          "Type": "BINARY",
+          "Left": {
+            "Type": "BINARY",
+            "Left": {
+              "Type": "IDENTIFIER",
+              "Parts": [
+                {
+                  "Type": "IDENTIFIER",
+                  "Lexeme": "Field__c",
+                  "Line": 3,
+                  "Start": 30,
+                  "End": 38
+                }
+              ],
+              "Value": "Field__c"
+            },
+            "Operator": {
+              "Type": "STAR",
+              "Lexeme": "*",
+              "Line": 3,
+              "Start": 39,
+              "End": 40
+            },
+            "Right": {
+              "Type": "LITERAL",
+              "Value": 2
+            }
+          },
+          "Operator": {
+            "Type": "GREATER_EQUAL",
+            "Lexeme": ">=",
+            "Line": 3,
+            "Start": 43,
+            "End": 45
+          },
+          "Right": {
+            "Type": "LITERAL",
+            "Value": 10
+          }
+        }
+      },
+      {
+        "Type": "GROUPMEMBER",
+        "Connector": {
+          "Type": "COMMA",
+          "Lexeme": ",",
+          "Line": 3,
+          "Start": 48,
+          "End": 49
+        },
+        "Value": {
+          "Type": "BINARY",
+          "Left": {
+            "Type": "BINARY",
+            "Left": {
+              "Type": "IDENTIFIER",
+              "Parts": [
+                {
+                  "Type": "IDENTIFIER",
+                  "Lexeme": "Field__c",
+                  "Line": 4,
+                  "Start": 53,
+                  "End": 61
+                }
+              ],
+              "Value": "Field__c"
+            },
+            "Operator": {
+              "Type": "PLUS",
+              "Lexeme": "+",
+              "Line": 4,
+              "Start": 62,
+              "End": 63
+            },
+            "Right": {
+              "Type": "LITERAL",
+              "Value": 2
+            }
+          },
+          "Operator": {
+            "Type": "LESS",
+            "Lexeme": "<",
+            "Line": 4,
+            "Start": 66,
+            "End": 67
+          },
+          "Right": {
+            "Type": "LITERAL",
+            "Value": 10
+          }
+        }
+      },
+      {
+        "Type": "GROUPMEMBER",
+        "Connector": {
+          "Type": "COMMA",
+          "Lexeme": ",",
+          "Line": 4,
+          "Start": 70,
+          "End": 71
+        },
+        "Value": {
+          "Type": "BINARY",
+          "Left": {
+            "Type": "BINARY",
+            "Left": {
+              "Type": "IDENTIFIER",
+              "Parts": [
+                {
+                  "Type": "IDENTIFIER",
+                  "Lexeme": "Field__c",
+                  "Line": 5,
+                  "Start": 75,
+                  "End": 83
+                }
+              ],
+              "Value": "Field__c"
+            },
+            "Operator": {
+              "Type": "MINUS",
+              "Lexeme": "-",
+              "Line": 5,
+              "Start": 84,
+              "End": 85
+            },
+            "Right": {
+              "Type": "LITERAL",
+              "Value": 2
+            }
+          },
+          "Operator": {
+            "Type": "LESS_EQUAL",
+            "Lexeme": "<=",
+            "Line": 5,
+            "Start": 88,
+            "End": 90
+          },
+          "Right": {
+            "Type": "LITERAL",
+            "Value": 10
+          }
+        }
+      },
+      {
+        "Type": "GROUPMEMBER",
+        "Connector": {
+          "Type": "COMMA",
+          "Lexeme": ",",
+          "Line": 5,
+          "Start": 93,
+          "End": 94
+        },
+        "Value": {
+          "Type": "BINARY",
+          "Left": {
+            "Type": "BINARY",
+            "Left": {
+              "Type": "IDENTIFIER",
+              "Parts": [
+                {
+                  "Type": "IDENTIFIER",
+                  "Lexeme": "Field__c",
+                  "Line": 6,
+                  "Start": 98,
+                  "End": 106
+                }
+              ],
+              "Value": "Field__c"
+            },
+            "Operator": {
+              "Type": "SLASH",
+              "Lexeme": "/",
+              "Line": 6,
+              "Start": 107,
+              "End": 108
+            },
+            "Right": {
+              "Type": "LITERAL",
+              "Value": 2
+            }
+          },
+          "Operator": {
+            "Type": "EQUAL_EQUAL",
+            "Lexeme": "==",
+            "Line": 6,
+            "Start": 111,
+            "End": 113
+          },
+          "Right": {
+            "Type": "LITERAL",
+            "Value": 10
+          }
+        }
+      },
+      {
+        "Type": "GROUPMEMBER",
+        "Connector": {
+          "Type": "COMMA",
+          "Lexeme": ",",
+          "Line": 6,
+          "Start": 116,
+          "End": 117
+        },
+        "Value": {
+          "Type": "BINARY",
+          "Left": {
+            "Type": "BINARY",
+            "Left": {
+              "Type": "IDENTIFIER",
+              "Parts": [
+                {
+                  "Type": "IDENTIFIER",
+                  "Lexeme": "Field__c",
+                  "Line": 7,
+                  "Start": 121,
+                  "End": 129
+                }
+              ],
+              "Value": "Field__c"
+            },
+            "Operator": {
+              "Type": "PLUS",
+              "Lexeme": "+",
+              "Line": 7,
+              "Start": 130,
+              "End": 131
+            },
+            "Right": {
+              "Type": "LITERAL",
+              "Value": 2
+            }
+          },
+          "Operator": {
+            "Type": "EQUAL",
+            "Lexeme": "=",
+            "Line": 7,
+            "Start": 134,
+            "End": 135
+          },
+          "Right": {
+            "Type": "LITERAL",
+            "Value": 10
+          }
+        }
+      },
+      {
+        "Type": "GROUPMEMBER",
+        "Connector": {
+          "Type": "COMMA",
+          "Lexeme": ",",
+          "Line": 7,
+          "Start": 138,
+          "End": 139
+        },
+        "Value": {
+          "Type": "ACTION",
+          "Token": {
+            "Type": "FUNC_OR",
+            "Lexeme": "OR",
+            "Line": 8,
+            "Start": 143,
+            "End": 145
+          },
+          "Parameters": {
+            "Type": "GROUPING",
+            "Members": [
+              {
+                "Type": "GROUPMEMBER",
+                "Value": {
+                  "Type": "BINARY",
+                  "Left": {
+                    "Type": "BINARY",
+                    "Left": {
+                      "Type": "IDENTIFIER",
+                      "Parts": [
+                        {
+                          "Type": "IDENTIFIER",
+                          "Lexeme": "Field__c",
+                          "Line": 9,
+                          "Start": 152,
+                          "End": 160
+                        }
+                      ],
+                      "Value": "Field__c"
+                    },
+                    "Operator": {
+                      "Type": "PLUS",
+                      "Lexeme": "+",
+                      "Line": 9,
+                      "Start": 161,
+                      "End": 162
+                    },
+                    "Right": {
+                      "Type": "LITERAL",
+                      "Value": 2
+                    }
+                  },
+                  "Operator": {
+                    "Type": "BANG_EQUAL",
+                    "Lexeme": "!=",
+                    "Line": 9,
+                    "Start": 165,
+                    "End": 167
+                  },
+                  "Right": {
+                    "Type": "LITERAL",
+                    "Value": 10
+                  }
+                }
+              },
+              {
+                "Type": "GROUPMEMBER",
+                "Connector": {
+                  "Type": "COMMA",
+                  "Lexeme": ",",
+                  "Line": 9,
+                  "Start": 170,
+                  "End": 171
+                },
+                "Value": {
+                  "Type": "BINARY",
+                  "Left": {
+                    "Type": "BINARY",
+                    "Left": {
+                      "Type": "IDENTIFIER",
+                      "Parts": [
+                        {
+                          "Type": "IDENTIFIER",
+                          "Lexeme": "Field__c",
+                          "Line": 10,
+                          "Start": 177,
+                          "End": 185
+                        }
+                      ],
+                      "Value": "Field__c"
+                    },
+                    "Operator": {
+                      "Type": "PLUS",
+                      "Lexeme": "+",
+                      "Line": 10,
+                      "Start": 186,
+                      "End": 187
+                    },
+                    "Right": {
+                      "Type": "LITERAL",
+                      "Value": 2
+                    }
+                  },
+                  "Operator": {
+                    "Type": "GREATER_LESS_NOT_EQUAL",
+                    "Lexeme": "<>",
+                    "Line": 10,
+                    "Start": 190,
+                    "End": 192
+                  },
+                  "Right": {
+                    "Type": "LITERAL",
+                    "Value": 10
+                  }
+                }
+              },
+              {
+                "Type": "GROUPMEMBER",
+                "Connector": {
+                  "Type": "COMMA",
+                  "Lexeme": ",",
+                  "Line": 10,
+                  "Start": 195,
+                  "End": 196
+                },
+                "Value": {
+                  "Type": "BINARY",
+                  "Left": {
+                    "Type": "BINARY",
+                    "Left": {
+                      "Type": "LITERAL",
+                      "Value": "My String"
+                    },
+                    "Operator": {
+                      "Type": "AMBERSAND",
+                      "Lexeme": "&",
+                      "Line": 11,
+                      "Start": 214,
+                      "End": 215
+                    },
+                    "Right": {
+                      "Type": "IDENTIFIER",
+                      "Parts": [
+                        {
+                          "Type": "IDENTIFIER",
+                          "Lexeme": "someFieldText__c",
+                          "Line": 11,
+                          "Start": 216,
+                          "End": 232
+                        }
+                      ],
+                      "Value": "someFieldText__c"
+                    }
+                  },
+                  "Operator": {
+                    "Type": "BANG_EQUAL",
+                    "Lexeme": "!=",
+                    "Line": 11,
+                    "Start": 233,
+                    "End": 235
+                  },
+                  "Right": {
+                    "Type": "IDENTIFIER",
+                    "Parts": [
+                      {
+                        "Type": "IDENTIFIER",
+                        "Lexeme": "null",
+                        "Line": 11,
+                        "Start": 236,
+                        "End": 240
+                      }
+                    ],
+                    "Value": "null"
+                  }
+                }
+              }
+            ],
+            "Wrapped": true
+          }
+        }
+      }
+    ],
+    "Wrapped": true
+  }
+}

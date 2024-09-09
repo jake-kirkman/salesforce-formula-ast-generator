@@ -1,0 +1,338 @@
+{
+  "Type": "ACTION",
+  "Token": {
+    "Type": "FUNC_IF",
+    "Lexeme": "IF",
+    "Line": 1,
+    "Start": 0,
+    "End": 2
+  },
+  "Parameters": {
+    "Type": "GROUPING",
+    "Members": [
+      {
+        "Type": "GROUPMEMBER",
+        "Value": {
+          "Type": "UNARY",
+          "Operator": {
+            "Type": "BANG",
+            "Lexeme": "!",
+            "Line": 2,
+            "Start": 7,
+            "End": 8
+          },
+          "Right": {
+            "Type": "ACTION",
+            "Token": {
+              "Type": "FUNC_ISBLANK",
+              "Lexeme": "ISBLANK",
+              "Line": 2,
+              "Start": 8,
+              "End": 15
+            },
+            "Parameters": {
+              "Type": "GROUPING",
+              "Members": [
+                {
+                  "Type": "GROUPMEMBER",
+                  "Value": {
+                    "Type": "ACTION",
+                    "Token": {
+                      "Type": "FUNC_TEXT",
+                      "Lexeme": "Text",
+                      "Line": 2,
+                      "Start": 16,
+                      "End": 20
+                    },
+                    "Parameters": {
+                      "Type": "GROUPING",
+                      "Members": [
+                        {
+                          "Type": "GROUPMEMBER",
+                          "Value": {
+                            "Type": "IDENTIFIER",
+                            "Parts": [
+                              {
+                                "Type": "IDENTIFIER",
+                                "Lexeme": "{!GetRecord",
+                                "Line": 2,
+                                "Start": 21,
+                                "End": 32
+                              },
+                              {
+                                "Type": "IDENTIFIER",
+                                "Lexeme": "IsChange__c}",
+                                "Line": 2,
+                                "Start": 33,
+                                "End": 45
+                              }
+                            ],
+                            "Value": "{!GetRecord.IsChange__c}"
+                          }
+                        }
+                      ],
+                      "Wrapped": true
+                    }
+                  }
+                }
+              ],
+              "Wrapped": true
+            }
+          }
+        }
+      },
+      {
+        "Type": "GROUPMEMBER",
+        "Connector": {
+          "Type": "COMMA",
+          "Lexeme": ",",
+          "Line": 2,
+          "Start": 47,
+          "End": 48
+        },
+        "Value": {
+          "Type": "ACTION",
+          "Token": {
+            "Type": "FUNC_TEXT",
+            "Lexeme": "Text",
+            "Line": 3,
+            "Start": 53,
+            "End": 57
+          },
+          "Parameters": {
+            "Type": "GROUPING",
+            "Members": [
+              {
+                "Type": "GROUPMEMBER",
+                "Value": {
+                  "Type": "IDENTIFIER",
+                  "Parts": [
+                    {
+                      "Type": "IDENTIFIER",
+                      "Lexeme": "{!GetRecord",
+                      "Line": 3,
+                      "Start": 58,
+                      "End": 69
+                    },
+                    {
+                      "Type": "IDENTIFIER",
+                      "Lexeme": "IsChange__c}",
+                      "Line": 3,
+                      "Start": 70,
+                      "End": 82
+                    }
+                  ],
+                  "Value": "{!GetRecord.IsChange__c}"
+                }
+              }
+            ],
+            "Wrapped": true
+          }
+        }
+      },
+      {
+        "Type": "GROUPMEMBER",
+        "Connector": {
+          "Type": "COMMA",
+          "Lexeme": ",",
+          "Line": 3,
+          "Start": 83,
+          "End": 84
+        },
+        "Value": {
+          "Type": "ACTION",
+          "Token": {
+            "Type": "FUNC_IF",
+            "Lexeme": "IF",
+            "Line": 4,
+            "Start": 89,
+            "End": 91
+          },
+          "Parameters": {
+            "Type": "GROUPING",
+            "Members": [
+              {
+                "Type": "GROUPMEMBER",
+                "Value": {
+                  "Type": "UNARY",
+                  "Operator": {
+                    "Type": "BANG",
+                    "Lexeme": "!",
+                    "Line": 5,
+                    "Start": 98,
+                    "End": 99
+                  },
+                  "Right": {
+                    "Type": "ACTION",
+                    "Token": {
+                      "Type": "FUNC_ISBLANK",
+                      "Lexeme": "ISBLANK",
+                      "Line": 5,
+                      "Start": 99,
+                      "End": 106
+                    },
+                    "Parameters": {
+                      "Type": "GROUPING",
+                      "Members": [
+                        {
+                          "Type": "GROUPMEMBER",
+                          "Value": {
+                            "Type": "IDENTIFIER",
+                            "Parts": [
+                              {
+                                "Type": "IDENTIFIER",
+                                "Lexeme": "{!Some_Flow_Variable}",
+                                "Line": 5,
+                                "Start": 107,
+                                "End": 128
+                              }
+                            ],
+                            "Value": "{!Some_Flow_Variable}"
+                          }
+                        }
+                      ],
+                      "Wrapped": true
+                    }
+                  }
+                }
+              },
+              {
+                "Type": "GROUPMEMBER",
+                "Connector": {
+                  "Type": "COMMA",
+                  "Lexeme": ",",
+                  "Line": 5,
+                  "Start": 129,
+                  "End": 130
+                },
+                "Value": {
+                  "Type": "IDENTIFIER",
+                  "Parts": [
+                    {
+                      "Type": "IDENTIFIER",
+                      "Lexeme": "{!Some_Flow_Variable}",
+                      "Line": 6,
+                      "Start": 137,
+                      "End": 158
+                    }
+                  ],
+                  "Value": "{!Some_Flow_Variable}"
+                }
+              },
+              {
+                "Type": "GROUPMEMBER",
+                "Connector": {
+                  "Type": "COMMA",
+                  "Lexeme": ",",
+                  "Line": 6,
+                  "Start": 158,
+                  "End": 159
+                },
+                "Value": {
+                  "Type": "ACTION",
+                  "Token": {
+                    "Type": "FUNC_IF",
+                    "Lexeme": "IF",
+                    "Line": 7,
+                    "Start": 166,
+                    "End": 168
+                  },
+                  "Parameters": {
+                    "Type": "GROUPING",
+                    "Members": [
+                      {
+                        "Type": "GROUPMEMBER",
+                        "Value": {
+                          "Type": "UNARY",
+                          "Operator": {
+                            "Type": "BANG",
+                            "Lexeme": "!",
+                            "Line": 8,
+                            "Start": 177,
+                            "End": 178
+                          },
+                          "Right": {
+                            "Type": "ACTION",
+                            "Token": {
+                              "Type": "FUNC_ISBLANK",
+                              "Lexeme": "ISBLANK",
+                              "Line": 8,
+                              "Start": 178,
+                              "End": 185
+                            },
+                            "Parameters": {
+                              "Type": "GROUPING",
+                              "Members": [
+                                {
+                                  "Type": "GROUPMEMBER",
+                                  "Value": {
+                                    "Type": "IDENTIFIER",
+                                    "Parts": [
+                                      {
+                                        "Type": "IDENTIFIER",
+                                        "Lexeme": "{!Some_Other_Flow_Variable}",
+                                        "Line": 8,
+                                        "Start": 186,
+                                        "End": 213
+                                      }
+                                    ],
+                                    "Value": "{!Some_Other_Flow_Variable}"
+                                  }
+                                }
+                              ],
+                              "Wrapped": true
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "Type": "GROUPMEMBER",
+                        "Connector": {
+                          "Type": "COMMA",
+                          "Lexeme": ",",
+                          "Line": 8,
+                          "Start": 214,
+                          "End": 215
+                        },
+                        "Value": {
+                          "Type": "IDENTIFIER",
+                          "Parts": [
+                            {
+                              "Type": "IDENTIFIER",
+                              "Lexeme": "{!Some_Other_Flow_Variable}",
+                              "Line": 9,
+                              "Start": 224,
+                              "End": 251
+                            }
+                          ],
+                          "Value": "{!Some_Other_Flow_Variable}"
+                        }
+                      },
+                      {
+                        "Type": "GROUPMEMBER",
+                        "Connector": {
+                          "Type": "COMMA",
+                          "Lexeme": ",",
+                          "Line": 9,
+                          "Start": 251,
+                          "End": 252
+                        },
+                        "Value": {
+                          "Type": "LITERAL",
+                          "Value": "Unknown"
+                        }
+                      }
+                    ],
+                    "Wrapped": true
+                  }
+                }
+              }
+            ],
+            "Wrapped": true
+          }
+        }
+      }
+    ],
+    "Wrapped": true
+  }
+}

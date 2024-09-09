@@ -1,0 +1,101 @@
+{
+  "Type": "BINARY",
+  "Left": {
+    "Type": "BINARY",
+    "Left": {
+      "Type": "BINARY",
+      "Left": {
+        "Type": "IDENTIFIER",
+        "Parts": [
+          {
+            "Type": "IDENTIFIER",
+            "Lexeme": "NumberOfItems__c",
+            "Line": 1,
+            "Start": 0,
+            "End": 16
+          }
+        ],
+        "Value": "NumberOfItems__c"
+      },
+      "Operator": {
+        "Type": "EXPONENTIATION",
+        "Lexeme": "^",
+        "Line": 1,
+        "Start": 17,
+        "End": 18
+      },
+      "Right": {
+        "Type": "LITERAL",
+        "Value": 2
+      }
+    },
+    "Operator": {
+      "Type": "PLUS",
+      "Lexeme": "+",
+      "Line": 1,
+      "Start": 21,
+      "End": 22
+    },
+    "Right": {
+      "Type": "BINARY",
+      "Left": {
+        "Type": "IDENTIFIER",
+        "Parts": [
+          {
+            "Type": "IDENTIFIER",
+            "Lexeme": "SomeOtherField__c",
+            "Line": 1,
+            "Start": 23,
+            "End": 40
+          }
+        ],
+        "Value": "SomeOtherField__c"
+      },
+      "Operator": {
+        "Type": "STAR",
+        "Lexeme": "*",
+        "Line": 1,
+        "Start": 41,
+        "End": 42
+      },
+      "Right": {
+        "Type": "LITERAL",
+        "Value": 2
+      }
+    }
+  },
+  "Operator": {
+    "Type": "MINUS",
+    "Lexeme": "-",
+    "Line": 1,
+    "Start": 45,
+    "End": 46
+  },
+  "Right": {
+    "Type": "BINARY",
+    "Left": {
+      "Type": "IDENTIFIER",
+      "Parts": [
+        {
+          "Type": "IDENTIFIER",
+          "Lexeme": "MyMinusField__c",
+          "Line": 1,
+          "Start": 47,
+          "End": 62
+        }
+      ],
+      "Value": "MyMinusField__c"
+    },
+    "Operator": {
+      "Type": "SLASH",
+      "Lexeme": "/",
+      "Line": 1,
+      "Start": 63,
+      "End": 64
+    },
+    "Right": {
+      "Type": "LITERAL",
+      "Value": 4
+    }
+  }
+}

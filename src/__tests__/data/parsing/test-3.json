@@ -1,0 +1,136 @@
+{
+  "Type": "GROUPING",
+  "Members": [
+    {
+      "Type": "GROUPMEMBER",
+      "Value": {
+        "Type": "BINARY",
+        "Left": {
+          "Type": "IDENTIFIER",
+          "Parts": [
+            {
+              "Type": "IDENTIFIER",
+              "Lexeme": "MyVariable",
+              "Line": 1,
+              "Start": 0,
+              "End": 10
+            },
+            {
+              "Type": "IDENTIFIER",
+              "Lexeme": "MyTest__c",
+              "Line": 1,
+              "Start": 11,
+              "End": 20
+            }
+          ],
+          "Value": "MyVariable.MyTest__c"
+        },
+        "Operator": {
+          "Type": "EQUAL",
+          "Lexeme": "=",
+          "Line": 1,
+          "Start": 21,
+          "End": 22
+        },
+        "Right": {
+          "Type": "LITERAL",
+          "Value": "abc"
+        }
+      }
+    },
+    {
+      "Type": "GROUPMEMBER",
+      "Connector": {
+        "Type": "AMBERSAND_AMBERSAND",
+        "Lexeme": "&&",
+        "Line": 1,
+        "Start": 29,
+        "End": 31
+      },
+      "Value": {
+        "Type": "BINARY",
+        "Left": {
+          "Type": "IDENTIFIER",
+          "Parts": [
+            {
+              "Type": "IDENTIFIER",
+              "Lexeme": "SomeOtherVar",
+              "Line": 1,
+              "Start": 32,
+              "End": 44
+            }
+          ],
+          "Value": "SomeOtherVar"
+        },
+        "Operator": {
+          "Type": "EQUAL",
+          "Lexeme": "=",
+          "Line": 1,
+          "Start": 45,
+          "End": 46
+        },
+        "Right": {
+          "Type": "LITERAL",
+          "Value": "xyz"
+        }
+      }
+    },
+    {
+      "Type": "GROUPMEMBER",
+      "Connector": {
+        "Type": "PIPE_PIPE",
+        "Lexeme": "||",
+        "Line": 1,
+        "Start": 53,
+        "End": 55
+      },
+      "Value": {
+        "Type": "UNARY",
+        "Operator": {
+          "Type": "BANG",
+          "Lexeme": "!",
+          "Line": 1,
+          "Start": 56,
+          "End": 57
+        },
+        "Right": {
+          "Type": "GROUPING",
+          "Members": [
+            {
+              "Type": "GROUPMEMBER",
+              "Value": {
+                "Type": "BINARY",
+                "Left": {
+                  "Type": "IDENTIFIER",
+                  "Parts": [
+                    {
+                      "Type": "IDENTIFIER",
+                      "Lexeme": "SomeOrVar",
+                      "Line": 1,
+                      "Start": 58,
+                      "End": 67
+                    }
+                  ],
+                  "Value": "SomeOrVar"
+                },
+                "Operator": {
+                  "Type": "EQUAL",
+                  "Lexeme": "=",
+                  "Line": 1,
+                  "Start": 68,
+                  "End": 69
+                },
+                "Right": {
+                  "Type": "LITERAL",
+                  "Value": "def"
+                }
+              }
+            }
+          ],
+          "Wrapped": true
+        }
+      }
+    }
+  ],
+  "Wrapped": false
+}

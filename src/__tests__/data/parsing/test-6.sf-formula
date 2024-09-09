@@ -1,0 +1,13 @@
+AND(
+  Field__c ^ 2 > 10,
+  Field__c * 2 >= 10,
+  Field__c + 2 < 10,
+  Field__c - 2 <= 10,
+  Field__c / 2 == 10,
+  Field__c + 2 = 10,
+  OR(
+    Field__c + 2 != 10,
+    Field__c + 2 <> 10,
+    "My String" & someFieldText__c != null
+  )
+)

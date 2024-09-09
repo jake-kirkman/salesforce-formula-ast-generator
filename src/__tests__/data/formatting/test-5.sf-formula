@@ -1,0 +1,1 @@
+NumberOfItems__c ^ 2 + SomeOtherField__c * 2 - MyMinusField__c / 4

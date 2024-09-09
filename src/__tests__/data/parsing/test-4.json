@@ -1,0 +1,197 @@
+{
+  "Type": "ACTION",
+  "Token": {
+    "Type": "FUNC_AND",
+    "Lexeme": "AND",
+    "Line": 1,
+    "Start": 0,
+    "End": 3
+  },
+  "Parameters": {
+    "Type": "GROUPING",
+    "Members": [
+      {
+        "Type": "GROUPMEMBER",
+        "Value": {
+          "Type": "UNARY",
+          "Operator": {
+            "Type": "BANG",
+            "Lexeme": "!",
+            "Line": 2,
+            "Start": 7,
+            "End": 8
+          },
+          "Right": {
+            "Type": "ACTION",
+            "Token": {
+              "Type": "FUNC_ISNEW",
+              "Lexeme": "ISNEW",
+              "Line": 2,
+              "Start": 8,
+              "End": 13
+            },
+            "Parameters": {
+              "Type": "GROUPING",
+              "Members": [],
+              "Wrapped": true
+            }
+          }
+        }
+      },
+      {
+        "Type": "GROUPMEMBER",
+        "Connector": {
+          "Type": "COMMA",
+          "Lexeme": ",",
+          "Line": 2,
+          "Start": 15,
+          "End": 16
+        },
+        "Value": {
+          "Type": "BINARY",
+          "Left": {
+            "Type": "IDENTIFIER",
+            "Parts": [
+              {
+                "Type": "IDENTIFIER",
+                "Lexeme": "RecordType",
+                "Line": 3,
+                "Start": 19,
+                "End": 29
+              },
+              {
+                "Type": "IDENTIFIER",
+                "Lexeme": "DeveloperName",
+                "Line": 3,
+                "Start": 30,
+                "End": 43
+              }
+            ],
+            "Value": "RecordType.DeveloperName"
+          },
+          "Operator": {
+            "Type": "EQUAL_EQUAL",
+            "Lexeme": "==",
+            "Line": 3,
+            "Start": 44,
+            "End": 46
+          },
+          "Right": {
+            "Type": "LITERAL",
+            "Value": "Some_Record_Type"
+          }
+        }
+      },
+      {
+        "Type": "GROUPMEMBER",
+        "Connector": {
+          "Type": "COMMA",
+          "Lexeme": ",",
+          "Line": 3,
+          "Start": 65,
+          "End": 66
+        },
+        "Value": {
+          "Type": "ACTION",
+          "Token": {
+            "Type": "FUNC_OR",
+            "Lexeme": "OR",
+            "Line": 4,
+            "Start": 69,
+            "End": 71
+          },
+          "Parameters": {
+            "Type": "GROUPING",
+            "Members": [
+              {
+                "Type": "GROUPMEMBER",
+                "Value": {
+                  "Type": "ACTION",
+                  "Token": {
+                    "Type": "FUNC_ISBLANK",
+                    "Lexeme": "ISBLANK",
+                    "Line": 5,
+                    "Start": 76,
+                    "End": 83
+                  },
+                  "Parameters": {
+                    "Type": "GROUPING",
+                    "Members": [
+                      {
+                        "Type": "GROUPMEMBER",
+                        "Value": {
+                          "Type": "IDENTIFIER",
+                          "Parts": [
+                            {
+                              "Type": "IDENTIFIER",
+                              "Lexeme": "TargetDate__c",
+                              "Line": 5,
+                              "Start": 84,
+                              "End": 97
+                            }
+                          ],
+                          "Value": "TargetDate__c"
+                        }
+                      }
+                    ],
+                    "Wrapped": true
+                  }
+                }
+              },
+              {
+                "Type": "GROUPMEMBER",
+                "Connector": {
+                  "Type": "COMMA",
+                  "Lexeme": ",",
+                  "Line": 5,
+                  "Start": 98,
+                  "End": 99
+                },
+                "Value": {
+                  "Type": "BINARY",
+                  "Left": {
+                    "Type": "IDENTIFIER",
+                    "Parts": [
+                      {
+                        "Type": "IDENTIFIER",
+                        "Lexeme": "TargetDate__c",
+                        "Line": 6,
+                        "Start": 103,
+                        "End": 116
+                      }
+                    ],
+                    "Value": "TargetDate__c"
+                  },
+                  "Operator": {
+                    "Type": "LESS",
+                    "Lexeme": "<",
+                    "Line": 6,
+                    "Start": 117,
+                    "End": 118
+                  },
+                  "Right": {
+                    "Type": "ACTION",
+                    "Token": {
+                      "Type": "FUNC_TODAY",
+                      "Lexeme": "TODAY",
+                      "Line": 6,
+                      "Start": 119,
+                      "End": 124
+                    },
+                    "Parameters": {
+                      "Type": "GROUPING",
+                      "Members": [],
+                      "Wrapped": true
+                    }
+                  }
+                }
+              }
+            ],
+            "Wrapped": true
+          }
+        }
+      }
+    ],
+    "Wrapped": true
+  }
+}

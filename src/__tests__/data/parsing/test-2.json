@@ -1,0 +1,873 @@
+{
+  "Type": "ACTION",
+  "Token": {
+    "Type": "FUNC_OR",
+    "Lexeme": "OR",
+    "Line": 1,
+    "Start": 0,
+    "End": 2
+  },
+  "Parameters": {
+    "Type": "GROUPING",
+    "Members": [
+      {
+        "Type": "GROUPMEMBER",
+        "Value": {
+          "Type": "ACTION",
+          "Token": {
+            "Type": "FUNC_AND",
+            "Lexeme": "AND",
+            "Line": 2,
+            "Start": 7,
+            "End": 10
+          },
+          "Parameters": {
+            "Type": "GROUPING",
+            "Members": [
+              {
+                "Type": "GROUPMEMBER",
+                "Value": {
+                  "Type": "ACTION",
+                  "Token": {
+                    "Type": "FUNC_NOT",
+                    "Lexeme": "NOT",
+                    "Line": 3,
+                    "Start": 17,
+                    "End": 20
+                  },
+                  "Parameters": {
+                    "Type": "GROUPING",
+                    "Members": [
+                      {
+                        "Type": "GROUPMEMBER",
+                        "Value": {
+                          "Type": "ACTION",
+                          "Token": {
+                            "Type": "FUNC_ISPICKVAL",
+                            "Lexeme": "ISPICKVAL",
+                            "Line": 3,
+                            "Start": 21,
+                            "End": 30
+                          },
+                          "Parameters": {
+                            "Type": "GROUPING",
+                            "Members": [
+                              {
+                                "Type": "GROUPMEMBER",
+                                "Value": {
+                                  "Type": "IDENTIFIER",
+                                  "Parts": [
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "Status",
+                                      "Line": 3,
+                                      "Start": 31,
+                                      "End": 37
+                                    }
+                                  ],
+                                  "Value": "Status"
+                                }
+                              },
+                              {
+                                "Type": "GROUPMEMBER",
+                                "Connector": {
+                                  "Type": "COMMA",
+                                  "Lexeme": ",",
+                                  "Line": 3,
+                                  "Start": 37,
+                                  "End": 38
+                                },
+                                "Value": {
+                                  "Type": "LITERAL",
+                                  "Value": "Open"
+                                }
+                              }
+                            ],
+                            "Wrapped": true
+                          }
+                        }
+                      }
+                    ],
+                    "Wrapped": true
+                  }
+                }
+              },
+              {
+                "Type": "GROUPMEMBER",
+                "Connector": {
+                  "Type": "COMMA",
+                  "Lexeme": ",",
+                  "Line": 3,
+                  "Start": 46,
+                  "End": 47
+                },
+                "Value": {
+                  "Type": "ACTION",
+                  "Token": {
+                    "Type": "FUNC_NOT",
+                    "Lexeme": "NOT",
+                    "Line": 4,
+                    "Start": 53,
+                    "End": 56
+                  },
+                  "Parameters": {
+                    "Type": "GROUPING",
+                    "Members": [
+                      {
+                        "Type": "GROUPMEMBER",
+                        "Value": {
+                          "Type": "ACTION",
+                          "Token": {
+                            "Type": "FUNC_ISBLANK",
+                            "Lexeme": "ISBLANK",
+                            "Line": 4,
+                            "Start": 57,
+                            "End": 64
+                          },
+                          "Parameters": {
+                            "Type": "GROUPING",
+                            "Members": [
+                              {
+                                "Type": "GROUPMEMBER",
+                                "Value": {
+                                  "Type": "IDENTIFIER",
+                                  "Parts": [
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "Phone",
+                                      "Line": 4,
+                                      "Start": 65,
+                                      "End": 70
+                                    }
+                                  ],
+                                  "Value": "Phone"
+                                }
+                              }
+                            ],
+                            "Wrapped": true
+                          }
+                        }
+                      }
+                    ],
+                    "Wrapped": true
+                  }
+                }
+              },
+              {
+                "Type": "GROUPMEMBER",
+                "Connector": {
+                  "Type": "COMMA",
+                  "Lexeme": ",",
+                  "Line": 4,
+                  "Start": 72,
+                  "End": 73
+                },
+                "Value": {
+                  "Type": "ACTION",
+                  "Token": {
+                    "Type": "FUNC_OR",
+                    "Lexeme": "OR",
+                    "Line": 5,
+                    "Start": 79,
+                    "End": 81
+                  },
+                  "Parameters": {
+                    "Type": "GROUPING",
+                    "Members": [
+                      {
+                        "Type": "GROUPMEMBER",
+                        "Value": {
+                          "Type": "ACTION",
+                          "Token": {
+                            "Type": "FUNC_CONTAINS",
+                            "Lexeme": "CONTAINS",
+                            "Line": 6,
+                            "Start": 90,
+                            "End": 98
+                          },
+                          "Parameters": {
+                            "Type": "GROUPING",
+                            "Members": [
+                              {
+                                "Type": "GROUPMEMBER",
+                                "Value": {
+                                  "Type": "IDENTIFIER",
+                                  "Parts": [
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "$CustomMetadata",
+                                      "Line": 6,
+                                      "Start": 100,
+                                      "End": 115
+                                    },
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "SomeCustomMetadata__mdt",
+                                      "Line": 6,
+                                      "Start": 116,
+                                      "End": 139
+                                    },
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "Record1",
+                                      "Line": 6,
+                                      "Start": 140,
+                                      "End": 147
+                                    },
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "SomeFieldWithNumbers__c",
+                                      "Line": 6,
+                                      "Start": 148,
+                                      "End": 171
+                                    }
+                                  ],
+                                  "Value": "$CustomMetadata.SomeCustomMetadata__mdt.Record1.SomeFieldWithNumbers__c"
+                                }
+                              },
+                              {
+                                "Type": "GROUPMEMBER",
+                                "Connector": {
+                                  "Type": "COMMA",
+                                  "Lexeme": ",",
+                                  "Line": 6,
+                                  "Start": 171,
+                                  "End": 172
+                                },
+                                "Value": {
+                                  "Type": "IDENTIFIER",
+                                  "Parts": [
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "Phone",
+                                      "Line": 6,
+                                      "Start": 173,
+                                      "End": 178
+                                    }
+                                  ],
+                                  "Value": "Phone"
+                                }
+                              }
+                            ],
+                            "Wrapped": true
+                          }
+                        }
+                      },
+                      {
+                        "Type": "GROUPMEMBER",
+                        "Connector": {
+                          "Type": "COMMA",
+                          "Lexeme": ",",
+                          "Line": 6,
+                          "Start": 179,
+                          "End": 180
+                        },
+                        "Value": {
+                          "Type": "ACTION",
+                          "Token": {
+                            "Type": "FUNC_CONTAINS",
+                            "Lexeme": "CONTAINS",
+                            "Line": 7,
+                            "Start": 188,
+                            "End": 196
+                          },
+                          "Parameters": {
+                            "Type": "GROUPING",
+                            "Members": [
+                              {
+                                "Type": "GROUPMEMBER",
+                                "Value": {
+                                  "Type": "IDENTIFIER",
+                                  "Parts": [
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "$CustomMetadata",
+                                      "Line": 7,
+                                      "Start": 198,
+                                      "End": 213
+                                    },
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "SomeCustomMetadata__mdt",
+                                      "Line": 7,
+                                      "Start": 214,
+                                      "End": 237
+                                    },
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "Record2",
+                                      "Line": 7,
+                                      "Start": 238,
+                                      "End": 245
+                                    },
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "SomeFieldWithNumbers__c",
+                                      "Line": 7,
+                                      "Start": 246,
+                                      "End": 269
+                                    }
+                                  ],
+                                  "Value": "$CustomMetadata.SomeCustomMetadata__mdt.Record2.SomeFieldWithNumbers__c"
+                                }
+                              },
+                              {
+                                "Type": "GROUPMEMBER",
+                                "Connector": {
+                                  "Type": "COMMA",
+                                  "Lexeme": ",",
+                                  "Line": 7,
+                                  "Start": 269,
+                                  "End": 270
+                                },
+                                "Value": {
+                                  "Type": "IDENTIFIER",
+                                  "Parts": [
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "Phone",
+                                      "Line": 7,
+                                      "Start": 271,
+                                      "End": 276
+                                    }
+                                  ],
+                                  "Value": "Phone"
+                                }
+                              }
+                            ],
+                            "Wrapped": true
+                          }
+                        }
+                      },
+                      {
+                        "Type": "GROUPMEMBER",
+                        "Connector": {
+                          "Type": "COMMA",
+                          "Lexeme": ",",
+                          "Line": 7,
+                          "Start": 277,
+                          "End": 278
+                        },
+                        "Value": {
+                          "Type": "ACTION",
+                          "Token": {
+                            "Type": "FUNC_CONTAINS",
+                            "Lexeme": "CONTAINS",
+                            "Line": 8,
+                            "Start": 286,
+                            "End": 294
+                          },
+                          "Parameters": {
+                            "Type": "GROUPING",
+                            "Members": [
+                              {
+                                "Type": "GROUPMEMBER",
+                                "Value": {
+                                  "Type": "IDENTIFIER",
+                                  "Parts": [
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "$CustomMetadata",
+                                      "Line": 8,
+                                      "Start": 296,
+                                      "End": 311
+                                    },
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "SomeCustomMetadata__mdt",
+                                      "Line": 8,
+                                      "Start": 312,
+                                      "End": 335
+                                    },
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "Record3",
+                                      "Line": 8,
+                                      "Start": 336,
+                                      "End": 343
+                                    },
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "SomeFieldWithNumbers__c",
+                                      "Line": 8,
+                                      "Start": 344,
+                                      "End": 367
+                                    }
+                                  ],
+                                  "Value": "$CustomMetadata.SomeCustomMetadata__mdt.Record3.SomeFieldWithNumbers__c"
+                                }
+                              },
+                              {
+                                "Type": "GROUPMEMBER",
+                                "Connector": {
+                                  "Type": "COMMA",
+                                  "Lexeme": ",",
+                                  "Line": 8,
+                                  "Start": 367,
+                                  "End": 368
+                                },
+                                "Value": {
+                                  "Type": "IDENTIFIER",
+                                  "Parts": [
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "Phone",
+                                      "Line": 8,
+                                      "Start": 369,
+                                      "End": 374
+                                    }
+                                  ],
+                                  "Value": "Phone"
+                                }
+                              }
+                            ],
+                            "Wrapped": true
+                          }
+                        }
+                      }
+                    ],
+                    "Wrapped": true
+                  }
+                }
+              }
+            ],
+            "Wrapped": true
+          }
+        }
+      },
+      {
+        "Type": "GROUPMEMBER",
+        "Connector": {
+          "Type": "COMMA",
+          "Lexeme": ",",
+          "Line": 10,
+          "Start": 387,
+          "End": 388
+        },
+        "Value": {
+          "Type": "ACTION",
+          "Token": {
+            "Type": "FUNC_AND",
+            "Lexeme": "AND",
+            "Line": 11,
+            "Start": 392,
+            "End": 395
+          },
+          "Parameters": {
+            "Type": "GROUPING",
+            "Members": [
+              {
+                "Type": "GROUPMEMBER",
+                "Value": {
+                  "Type": "ACTION",
+                  "Token": {
+                    "Type": "FUNC_NOT",
+                    "Lexeme": "NOT",
+                    "Line": 12,
+                    "Start": 402,
+                    "End": 405
+                  },
+                  "Parameters": {
+                    "Type": "GROUPING",
+                    "Members": [
+                      {
+                        "Type": "GROUPMEMBER",
+                        "Value": {
+                          "Type": "ACTION",
+                          "Token": {
+                            "Type": "FUNC_ISPICKVAL",
+                            "Lexeme": "ISPICKVAL",
+                            "Line": 12,
+                            "Start": 406,
+                            "End": 415
+                          },
+                          "Parameters": {
+                            "Type": "GROUPING",
+                            "Members": [
+                              {
+                                "Type": "GROUPMEMBER",
+                                "Value": {
+                                  "Type": "IDENTIFIER",
+                                  "Parts": [
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "Status",
+                                      "Line": 12,
+                                      "Start": 416,
+                                      "End": 422
+                                    }
+                                  ],
+                                  "Value": "Status"
+                                }
+                              },
+                              {
+                                "Type": "GROUPMEMBER",
+                                "Connector": {
+                                  "Type": "COMMA",
+                                  "Lexeme": ",",
+                                  "Line": 12,
+                                  "Start": 422,
+                                  "End": 423
+                                },
+                                "Value": {
+                                  "Type": "LITERAL",
+                                  "Value": "Open"
+                                }
+                              }
+                            ],
+                            "Wrapped": true
+                          }
+                        }
+                      }
+                    ],
+                    "Wrapped": true
+                  }
+                }
+              },
+              {
+                "Type": "GROUPMEMBER",
+                "Connector": {
+                  "Type": "COMMA",
+                  "Lexeme": ",",
+                  "Line": 12,
+                  "Start": 431,
+                  "End": 432
+                },
+                "Value": {
+                  "Type": "ACTION",
+                  "Token": {
+                    "Type": "FUNC_NOT",
+                    "Lexeme": "NOT",
+                    "Line": 13,
+                    "Start": 438,
+                    "End": 441
+                  },
+                  "Parameters": {
+                    "Type": "GROUPING",
+                    "Members": [
+                      {
+                        "Type": "GROUPMEMBER",
+                        "Value": {
+                          "Type": "ACTION",
+                          "Token": {
+                            "Type": "FUNC_ISBLANK",
+                            "Lexeme": "ISBLANK",
+                            "Line": 13,
+                            "Start": 442,
+                            "End": 449
+                          },
+                          "Parameters": {
+                            "Type": "GROUPING",
+                            "Members": [
+                              {
+                                "Type": "GROUPMEMBER",
+                                "Value": {
+                                  "Type": "IDENTIFIER",
+                                  "Parts": [
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "MobilePhone",
+                                      "Line": 13,
+                                      "Start": 450,
+                                      "End": 461
+                                    }
+                                  ],
+                                  "Value": "MobilePhone"
+                                }
+                              }
+                            ],
+                            "Wrapped": true
+                          }
+                        }
+                      }
+                    ],
+                    "Wrapped": true
+                  }
+                }
+              },
+              {
+                "Type": "GROUPMEMBER",
+                "Connector": {
+                  "Type": "COMMA",
+                  "Lexeme": ",",
+                  "Line": 13,
+                  "Start": 463,
+                  "End": 464
+                },
+                "Value": {
+                  "Type": "ACTION",
+                  "Token": {
+                    "Type": "FUNC_OR",
+                    "Lexeme": "OR",
+                    "Line": 14,
+                    "Start": 470,
+                    "End": 472
+                  },
+                  "Parameters": {
+                    "Type": "GROUPING",
+                    "Members": [
+                      {
+                        "Type": "GROUPMEMBER",
+                        "Value": {
+                          "Type": "ACTION",
+                          "Token": {
+                            "Type": "FUNC_CONTAINS",
+                            "Lexeme": "CONTAINS",
+                            "Line": 15,
+                            "Start": 481,
+                            "End": 489
+                          },
+                          "Parameters": {
+                            "Type": "GROUPING",
+                            "Members": [
+                              {
+                                "Type": "GROUPMEMBER",
+                                "Value": {
+                                  "Type": "IDENTIFIER",
+                                  "Parts": [
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "$CustomMetadata",
+                                      "Line": 15,
+                                      "Start": 491,
+                                      "End": 506
+                                    },
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "SomeCustomMetadata__mdt",
+                                      "Line": 15,
+                                      "Start": 507,
+                                      "End": 530
+                                    },
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "Record1",
+                                      "Line": 15,
+                                      "Start": 531,
+                                      "End": 538
+                                    },
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "SomeFieldWithNumbers__c",
+                                      "Line": 15,
+                                      "Start": 539,
+                                      "End": 562
+                                    }
+                                  ],
+                                  "Value": "$CustomMetadata.SomeCustomMetadata__mdt.Record1.SomeFieldWithNumbers__c"
+                                }
+                              },
+                              {
+                                "Type": "GROUPMEMBER",
+                                "Connector": {
+                                  "Type": "COMMA",
+                                  "Lexeme": ",",
+                                  "Line": 15,
+                                  "Start": 562,
+                                  "End": 563
+                                },
+                                "Value": {
+                                  "Type": "IDENTIFIER",
+                                  "Parts": [
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "MobilePhone",
+                                      "Line": 15,
+                                      "Start": 564,
+                                      "End": 575
+                                    }
+                                  ],
+                                  "Value": "MobilePhone"
+                                }
+                              }
+                            ],
+                            "Wrapped": true
+                          }
+                        }
+                      },
+                      {
+                        "Type": "GROUPMEMBER",
+                        "Connector": {
+                          "Type": "COMMA",
+                          "Lexeme": ",",
+                          "Line": 15,
+                          "Start": 576,
+                          "End": 577
+                        },
+                        "Value": {
+                          "Type": "ACTION",
+                          "Token": {
+                            "Type": "FUNC_CONTAINS",
+                            "Lexeme": "CONTAINS",
+                            "Line": 16,
+                            "Start": 585,
+                            "End": 593
+                          },
+                          "Parameters": {
+                            "Type": "GROUPING",
+                            "Members": [
+                              {
+                                "Type": "GROUPMEMBER",
+                                "Value": {
+                                  "Type": "IDENTIFIER",
+                                  "Parts": [
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "$CustomMetadata",
+                                      "Line": 16,
+                                      "Start": 595,
+                                      "End": 610
+                                    },
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "SomeCustomMetadata__mdt",
+                                      "Line": 16,
+                                      "Start": 611,
+                                      "End": 634
+                                    },
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "Record2",
+                                      "Line": 16,
+                                      "Start": 635,
+                                      "End": 642
+                                    },
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "SomeFieldWithNumbers__c",
+                                      "Line": 16,
+                                      "Start": 643,
+                                      "End": 666
+                                    }
+                                  ],
+                                  "Value": "$CustomMetadata.SomeCustomMetadata__mdt.Record2.SomeFieldWithNumbers__c"
+                                }
+                              },
+                              {
+                                "Type": "GROUPMEMBER",
+                                "Connector": {
+                                  "Type": "COMMA",
+                                  "Lexeme": ",",
+                                  "Line": 16,
+                                  "Start": 666,
+                                  "End": 667
+                                },
+                                "Value": {
+                                  "Type": "IDENTIFIER",
+                                  "Parts": [
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "MobilePhone",
+                                      "Line": 16,
+                                      "Start": 668,
+                                      "End": 679
+                                    }
+                                  ],
+                                  "Value": "MobilePhone"
+                                }
+                              }
+                            ],
+                            "Wrapped": true
+                          }
+                        }
+                      },
+                      {
+                        "Type": "GROUPMEMBER",
+                        "Connector": {
+                          "Type": "COMMA",
+                          "Lexeme": ",",
+                          "Line": 16,
+                          "Start": 680,
+                          "End": 681
+                        },
+                        "Value": {
+                          "Type": "ACTION",
+                          "Token": {
+                            "Type": "FUNC_CONTAINS",
+                            "Lexeme": "CONTAINS",
+                            "Line": 17,
+                            "Start": 689,
+                            "End": 697
+                          },
+                          "Parameters": {
+                            "Type": "GROUPING",
+                            "Members": [
+                              {
+                                "Type": "GROUPMEMBER",
+                                "Value": {
+                                  "Type": "IDENTIFIER",
+                                  "Parts": [
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "$CustomMetadata",
+                                      "Line": 17,
+                                      "Start": 699,
+                                      "End": 714
+                                    },
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "SomeCustomMetadata__mdt",
+                                      "Line": 17,
+                                      "Start": 715,
+                                      "End": 738
+                                    },
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "Record3",
+                                      "Line": 17,
+                                      "Start": 739,
+                                      "End": 746
+                                    },
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "SomeFieldWithNumbers__c",
+                                      "Line": 17,
+                                      "Start": 747,
+                                      "End": 770
+                                    }
+                                  ],
+                                  "Value": "$CustomMetadata.SomeCustomMetadata__mdt.Record3.SomeFieldWithNumbers__c"
+                                }
+                              },
+                              {
+                                "Type": "GROUPMEMBER",
+                                "Connector": {
+                                  "Type": "COMMA",
+                                  "Lexeme": ",",
+                                  "Line": 17,
+                                  "Start": 770,
+                                  "End": 771
+                                },
+                                "Value": {
+                                  "Type": "IDENTIFIER",
+                                  "Parts": [
+                                    {
+                                      "Type": "IDENTIFIER",
+                                      "Lexeme": "MobilePhone",
+                                      "Line": 17,
+                                      "Start": 772,
+                                      "End": 783
+                                    }
+                                  ],
+                                  "Value": "MobilePhone"
+                                }
+                              }
+                            ],
+                            "Wrapped": true
+                          }
+                        }
+                      }
+                    ],
+                    "Wrapped": true
+                  }
+                }
+              }
+            ],
+            "Wrapped": true
+          }
+        }
+      }
+    ],
+    "Wrapped": true
+  }
+}
