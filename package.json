@@ -2,17 +2,23 @@
   "name": "salesforce-formula-ast-generator",
   "version": "0.1.0",
   "description": "Abstract Syntax Tree (AST) generator for Salesforce Formulas",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
   "bin": {
     "salesforce-formula-ast-generator": "./dist/index.js"
   },
+  "repository": {
+    "url": "https://github.com/jake-kirkman/salesforce-formula-ast-generator"
+  },
+  "files": [
+    "dist/**"
+  ],
   "scripts": {
     "test": "jest",
     "build": "tsc",
     "start": "node dist/index.js"
   },
   "author": "Jake Kirkman",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.12",
     "@types/node": "^22.5.3",
