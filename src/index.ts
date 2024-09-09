@@ -66,6 +66,10 @@ async function init() {
   } else if(!['json', 'formula'].includes(values.format?.toLowerCase())) {
     console.error('format [-f] must be "json" or "formula"');
     process.exit(1);
+  } else if(!values.inputDir) {
+    console.error('--inputDir [-i] is required');
+  } else if(!values.outputDir) {
+    console.error('--outputDir [-o] is required');
   } else {
     let output;
     const file = await fs.readFile(path.resolve(values.inputDir));
