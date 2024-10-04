@@ -40,7 +40,7 @@ export default class Parser {
       values.push(initGroupMember(this._previous(), this._handleEquality()));
     }
     if(values.length > 1) {
-      expr = initGrouping(values, false);
+      expr = initGrouping(values);
     }
 
     return expr;
@@ -99,21 +99,21 @@ export default class Parser {
     return this._handlePrimary();
   }
   _handlePrimary() {
-    if(this._match(TokenType.FALSE)) return initLiteral(false);
-    if(this._match(TokenType.TRUE)) return initLiteral(true);
-    if(this._match(TokenType.NUMBER, TokenType.STRING)) return initLiteral(this._previous().Literal);
+    if(this._match(TokenType.FALSE)) return initLiteral(this._previous(), false);
+    if(this._match(TokenType.TRUE)) return initLiteral(this._previous(), true);
+    if(this._match(TokenType.NUMBER, TokenType.STRING)) return initLiteral(this._previous());
 
     if(this._match(TokenType.LEFT_PAREN)) {
+      const leftBracket = this._previous();
+      const values = [];
       if(!this._match(TokenType.RIGHT_PAREN)) {
-        const values = [initGroupMember(undefined, this._handleExpression())];
+        values.push(initGroupMember(undefined, this._handleExpression()));
         while(this._match(TokenType.COMMA)) {
           values.push(initGroupMember(this._previous(), this._handleExpression()));
         }
         this._consume(TokenType.RIGHT_PAREN, 'Expected ) after expression');
-        return initGrouping(values, true);
-      } else {
-        return initGrouping([], true);
       }
+      return initGrouping(values, leftBracket, this._previous());
     }
 
     if(this._match(...Object.values(KEYWORDS))) {
