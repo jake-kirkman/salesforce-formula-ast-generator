@@ -11,7 +11,10 @@ export function error(pLine: number, pMessage: string): void {
 }
 
 export function report(pLine: number, pWhere: string | undefined, pMessage: string) {
-  console.log(
-    `[line ${pLine}] Error${pWhere || ''}: ${pMessage}`
-  );
+  const output = `[line ${pLine}] Error${pWhere || ''}: ${pMessage}`;
+  if(require.main === module) {
+    console.log(output);
+  } else {
+    throw new Error(output);
+  }
 }
