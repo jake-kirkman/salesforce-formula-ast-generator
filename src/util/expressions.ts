@@ -32,17 +32,20 @@ export function initUnary(pOperator: Token, pRight: Expression): Unary {
     Right: pRight
   };
 }
-export function initLiteral(pValue: string | number | boolean): Literal {
+export function initLiteral(pToken: Token, pValue?: string | number | boolean): Literal {
   return {
     Type: ExpressionType.LITERAL,
-    Value: pValue
+    Value: pValue || pToken.Literal,
+    Token: pToken
   };
 }
-export function initGrouping(pMembers: GroupMember[], pWrapped?: boolean): Grouping {
+export function initGrouping(pMembers: GroupMember[], pLeftBracket?: Token, pRightBracket?: Token): Grouping {
   return {
     Type: ExpressionType.GROUPING,
     Members: pMembers,
-    Wrapped: pWrapped === true
+    LeftBracket: pLeftBracket,
+    RightBracket: pRightBracket,
+    Wrapped: pLeftBracket !== undefined
   }
 }
 export function initGroupMember(pConnector: Token, pValue: Expression): GroupMember {
