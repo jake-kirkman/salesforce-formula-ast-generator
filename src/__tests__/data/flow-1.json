@@ -71,11 +71,39 @@
                           }
                         }
                       ],
+                      "LeftBracket": {
+                        "Type": "LEFT_PAREN",
+                        "Lexeme": "(",
+                        "Line": 2,
+                        "Start": 20,
+                        "End": 21
+                      },
+                      "RightBracket": {
+                        "Type": "RIGHT_PAREN",
+                        "Lexeme": ")",
+                        "Line": 2,
+                        "Start": 45,
+                        "End": 46
+                      },
                       "Wrapped": true
                     }
                   }
                 }
               ],
+              "LeftBracket": {
+                "Type": "LEFT_PAREN",
+                "Lexeme": "(",
+                "Line": 2,
+                "Start": 15,
+                "End": 16
+              },
+              "RightBracket": {
+                "Type": "RIGHT_PAREN",
+                "Lexeme": ")",
+                "Line": 2,
+                "Start": 46,
+                "End": 47
+              },
               "Wrapped": true
             }
           }
@@ -126,6 +154,20 @@
                 }
               }
             ],
+            "LeftBracket": {
+              "Type": "LEFT_PAREN",
+              "Lexeme": "(",
+              "Line": 3,
+              "Start": 57,
+              "End": 58
+            },
+            "RightBracket": {
+              "Type": "RIGHT_PAREN",
+              "Lexeme": ")",
+              "Line": 3,
+              "Start": 82,
+              "End": 83
+            },
             "Wrapped": true
           }
         }
@@ -191,6 +233,20 @@
                           }
                         }
                       ],
+                      "LeftBracket": {
+                        "Type": "LEFT_PAREN",
+                        "Lexeme": "(",
+                        "Line": 5,
+                        "Start": 106,
+                        "End": 107
+                      },
+                      "RightBracket": {
+                        "Type": "RIGHT_PAREN",
+                        "Lexeme": ")",
+                        "Line": 5,
+                        "Start": 128,
+                        "End": 129
+                      },
                       "Wrapped": true
                     }
                   }
@@ -280,6 +336,20 @@
                                   }
                                 }
                               ],
+                              "LeftBracket": {
+                                "Type": "LEFT_PAREN",
+                                "Lexeme": "(",
+                                "Line": 8,
+                                "Start": 185,
+                                "End": 186
+                              },
+                              "RightBracket": {
+                                "Type": "RIGHT_PAREN",
+                                "Lexeme": ")",
+                                "Line": 8,
+                                "Start": 213,
+                                "End": 214
+                              },
                               "Wrapped": true
                             }
                           }
@@ -319,20 +389,70 @@
                         },
                         "Value": {
                           "Type": "LITERAL",
-                          "Value": "Unknown"
+                          "Value": "Unknown",
+                          "Token": {
+                            "Type": "STRING",
+                            "Lexeme": "'Unknown'",
+                            "Literal": "Unknown",
+                            "Line": 10,
+                            "Start": 260,
+                            "End": 269
+                          }
                         }
                       }
                     ],
+                    "LeftBracket": {
+                      "Type": "LEFT_PAREN",
+                      "Lexeme": "(",
+                      "Line": 7,
+                      "Start": 168,
+                      "End": 169
+                    },
+                    "RightBracket": {
+                      "Type": "RIGHT_PAREN",
+                      "Lexeme": ")",
+                      "Line": 11,
+                      "Start": 275,
+                      "End": 276
+                    },
                     "Wrapped": true
                   }
                 }
               }
             ],
+            "LeftBracket": {
+              "Type": "LEFT_PAREN",
+              "Lexeme": "(",
+              "Line": 4,
+              "Start": 91,
+              "End": 92
+            },
+            "RightBracket": {
+              "Type": "RIGHT_PAREN",
+              "Lexeme": ")",
+              "Line": 12,
+              "Start": 280,
+              "End": 281
+            },
             "Wrapped": true
           }
         }
       }
     ],
+    "LeftBracket": {
+      "Type": "LEFT_PAREN",
+      "Lexeme": "(",
+      "Line": 1,
+      "Start": 2,
+      "End": 3
+    },
+    "RightBracket": {
+      "Type": "RIGHT_PAREN",
+      "Lexeme": ")",
+      "Line": 13,
+      "Start": 283,
+      "End": 284
+    },
     "Wrapped": true
   }
 }

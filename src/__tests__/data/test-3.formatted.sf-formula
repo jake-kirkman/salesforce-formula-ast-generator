@@ -1,0 +1,5 @@
+MyVariable.MyTest__c = "abc"
+&& SomeOtherVar = "xyz"
+|| !(
+  SomeOrVar = "def"
+)

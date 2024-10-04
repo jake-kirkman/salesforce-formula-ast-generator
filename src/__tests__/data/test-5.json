@@ -26,7 +26,15 @@
       },
       "Right": {
         "Type": "LITERAL",
-        "Value": 2
+        "Value": 2,
+        "Token": {
+          "Type": "NUMBER",
+          "Lexeme": "2",
+          "Literal": 2,
+          "Line": 1,
+          "Start": 19,
+          "End": 20
+        }
       }
     },
     "Operator": {
@@ -60,7 +68,15 @@
       },
       "Right": {
         "Type": "LITERAL",
-        "Value": 2
+        "Value": 2,
+        "Token": {
+          "Type": "NUMBER",
+          "Lexeme": "2",
+          "Literal": 2,
+          "Line": 1,
+          "Start": 43,
+          "End": 44
+        }
       }
     }
   },
@@ -95,7 +111,15 @@
     },
     "Right": {
       "Type": "LITERAL",
-      "Value": 4
+      "Value": 4,
+      "Token": {
+        "Type": "NUMBER",
+        "Lexeme": "4",
+        "Literal": 4,
+        "Line": 1,
+        "Start": 65,
+        "End": 66
+      }
     }
   }
 }

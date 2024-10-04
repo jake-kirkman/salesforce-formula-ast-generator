@@ -34,7 +34,15 @@
         },
         "Right": {
           "Type": "LITERAL",
-          "Value": "abc"
+          "Value": "abc",
+          "Token": {
+            "Type": "STRING",
+            "Lexeme": "'abc'",
+            "Literal": "abc",
+            "Line": 1,
+            "Start": 23,
+            "End": 28
+          }
         }
       }
     },
@@ -71,7 +79,15 @@
         },
         "Right": {
           "Type": "LITERAL",
-          "Value": "xyz"
+          "Value": "xyz",
+          "Token": {
+            "Type": "STRING",
+            "Lexeme": "'xyz'",
+            "Literal": "xyz",
+            "Line": 1,
+            "Start": 47,
+            "End": 52
+          }
         }
       }
     },
@@ -122,11 +138,33 @@
                 },
                 "Right": {
                   "Type": "LITERAL",
-                  "Value": "def"
+                  "Value": "def",
+                  "Token": {
+                    "Type": "STRING",
+                    "Lexeme": "'def'",
+                    "Literal": "def",
+                    "Line": 1,
+                    "Start": 70,
+                    "End": 75
+                  }
                 }
               }
             }
           ],
+          "LeftBracket": {
+            "Type": "LEFT_PAREN",
+            "Lexeme": "(",
+            "Line": 1,
+            "Start": 57,
+            "End": 58
+          },
+          "RightBracket": {
+            "Type": "RIGHT_PAREN",
+            "Lexeme": ")",
+            "Line": 1,
+            "Start": 75,
+            "End": 76
+          },
           "Wrapped": true
         }
       }

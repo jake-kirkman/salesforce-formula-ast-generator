@@ -41,7 +41,15 @@
         },
         "Right": {
           "Type": "LITERAL",
-          "Value": "Henry Wildcat"
+          "Value": "Henry Wildcat",
+          "Token": {
+            "Type": "STRING",
+            "Lexeme": "'Henry Wildcat'",
+            "Literal": "Henry Wildcat",
+            "Line": 1,
+            "Start": 33,
+            "End": 48
+          }
         }
       }
     },
@@ -104,11 +112,39 @@
                       }
                     }
                   ],
+                  "LeftBracket": {
+                    "Type": "LEFT_PAREN",
+                    "Lexeme": "(",
+                    "Line": 1,
+                    "Start": 63,
+                    "End": 64
+                  },
+                  "RightBracket": {
+                    "Type": "RIGHT_PAREN",
+                    "Lexeme": ")",
+                    "Line": 1,
+                    "Start": 84,
+                    "End": 85
+                  },
                   "Wrapped": true
                 }
               }
             }
           ],
+          "LeftBracket": {
+            "Type": "LEFT_PAREN",
+            "Lexeme": "(",
+            "Line": 1,
+            "Start": 55,
+            "End": 56
+          },
+          "RightBracket": {
+            "Type": "RIGHT_PAREN",
+            "Lexeme": ")",
+            "Line": 1,
+            "Start": 85,
+            "End": 86
+          },
           "Wrapped": true
         }
       }

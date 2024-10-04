@@ -4,8 +4,7 @@
 
 import fs from 'fs/promises';
 import {describe, expect, test} from '@jest/globals';
-import parserDiscovery from './data/parsing/discovery.json';
-import formattingDiscovery from './data/formatting/discovery.json';
+import discovery from './data/discovery.json';
 import path from 'path';
 import { format, parse } from '..';
 import Expression from '../types/expression';
@@ -16,7 +15,7 @@ import Expression from '../types/expression';
 
 describe('formula-parsing', () => {
 
-  for(const fileName of parserDiscovery) {
+  for(const fileName of discovery) {
     test(`${fileName} parses correctly`, async () => {
       //Grab files
       const [data, expectedResult] = await Promise.all([
@@ -24,7 +23,6 @@ describe('formula-parsing', () => {
           path.join(
             __dirname, 
             'data', 
-            'parsing', 
             fileName + '.sf-formula'
           )
         ).then(
@@ -34,7 +32,6 @@ describe('formula-parsing', () => {
           path.join(
             __dirname, 
             'data', 
-            'parsing', 
             fileName + '.json'
           )
         ).then(
@@ -52,7 +49,7 @@ describe('formula-parsing', () => {
 
 describe('formula-formatting', () => {
 
-  for(const fileName of formattingDiscovery) {
+  for(const fileName of discovery) {
     test(`${fileName} formats correctly`, async () => {
       //Grab files
       const [data, expectedResult] = await Promise.all([
@@ -60,7 +57,6 @@ describe('formula-formatting', () => {
           path.join(
             __dirname, 
             'data', 
-            'formatting', 
             fileName + '.json'
           )
         ).then(
@@ -70,8 +66,7 @@ describe('formula-formatting', () => {
           path.join(
             __dirname, 
             'data', 
-            'formatting', 
-            fileName + '.sf-formula'
+            fileName + '.formatted.sf-formula'
           )
         ).then(
           pFileData => pFileData.toString()

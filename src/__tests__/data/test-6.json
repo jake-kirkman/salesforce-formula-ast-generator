@@ -38,7 +38,15 @@
             },
             "Right": {
               "Type": "LITERAL",
-              "Value": 2
+              "Value": 2,
+              "Token": {
+                "Type": "NUMBER",
+                "Lexeme": "2",
+                "Literal": 2,
+                "Line": 2,
+                "Start": 19,
+                "End": 20
+              }
             }
           },
           "Operator": {
@@ -50,7 +58,15 @@
           },
           "Right": {
             "Type": "LITERAL",
-            "Value": 10
+            "Value": 10,
+            "Token": {
+              "Type": "NUMBER",
+              "Lexeme": "10",
+              "Literal": 10,
+              "Line": 2,
+              "Start": 23,
+              "End": 25
+            }
           }
         }
       },
@@ -89,7 +105,15 @@
             },
             "Right": {
               "Type": "LITERAL",
-              "Value": 2
+              "Value": 2,
+              "Token": {
+                "Type": "NUMBER",
+                "Lexeme": "2",
+                "Literal": 2,
+                "Line": 3,
+                "Start": 41,
+                "End": 42
+              }
             }
           },
           "Operator": {
@@ -101,7 +125,15 @@
           },
           "Right": {
             "Type": "LITERAL",
-            "Value": 10
+            "Value": 10,
+            "Token": {
+              "Type": "NUMBER",
+              "Lexeme": "10",
+              "Literal": 10,
+              "Line": 3,
+              "Start": 46,
+              "End": 48
+            }
           }
         }
       },
@@ -140,7 +172,15 @@
             },
             "Right": {
               "Type": "LITERAL",
-              "Value": 2
+              "Value": 2,
+              "Token": {
+                "Type": "NUMBER",
+                "Lexeme": "2",
+                "Literal": 2,
+                "Line": 4,
+                "Start": 64,
+                "End": 65
+              }
             }
           },
           "Operator": {
@@ -152,7 +192,15 @@
           },
           "Right": {
             "Type": "LITERAL",
-            "Value": 10
+            "Value": 10,
+            "Token": {
+              "Type": "NUMBER",
+              "Lexeme": "10",
+              "Literal": 10,
+              "Line": 4,
+              "Start": 68,
+              "End": 70
+            }
           }
         }
       },
@@ -191,7 +239,15 @@
             },
             "Right": {
               "Type": "LITERAL",
-              "Value": 2
+              "Value": 2,
+              "Token": {
+                "Type": "NUMBER",
+                "Lexeme": "2",
+                "Literal": 2,
+                "Line": 5,
+                "Start": 86,
+                "End": 87
+              }
             }
           },
           "Operator": {
@@ -203,7 +259,15 @@
           },
           "Right": {
             "Type": "LITERAL",
-            "Value": 10
+            "Value": 10,
+            "Token": {
+              "Type": "NUMBER",
+              "Lexeme": "10",
+              "Literal": 10,
+              "Line": 5,
+              "Start": 91,
+              "End": 93
+            }
           }
         }
       },
@@ -242,7 +306,15 @@
             },
             "Right": {
               "Type": "LITERAL",
-              "Value": 2
+              "Value": 2,
+              "Token": {
+                "Type": "NUMBER",
+                "Lexeme": "2",
+                "Literal": 2,
+                "Line": 6,
+                "Start": 109,
+                "End": 110
+              }
             }
           },
           "Operator": {
@@ -254,7 +326,15 @@
           },
           "Right": {
             "Type": "LITERAL",
-            "Value": 10
+            "Value": 10,
+            "Token": {
+              "Type": "NUMBER",
+              "Lexeme": "10",
+              "Literal": 10,
+              "Line": 6,
+              "Start": 114,
+              "End": 116
+            }
           }
         }
       },
@@ -293,7 +373,15 @@
             },
             "Right": {
               "Type": "LITERAL",
-              "Value": 2
+              "Value": 2,
+              "Token": {
+                "Type": "NUMBER",
+                "Lexeme": "2",
+                "Literal": 2,
+                "Line": 7,
+                "Start": 132,
+                "End": 133
+              }
             }
           },
           "Operator": {
@@ -305,7 +393,15 @@
           },
           "Right": {
             "Type": "LITERAL",
-            "Value": 10
+            "Value": 10,
+            "Token": {
+              "Type": "NUMBER",
+              "Lexeme": "10",
+              "Literal": 10,
+              "Line": 7,
+              "Start": 136,
+              "End": 138
+            }
           }
         }
       },
@@ -358,7 +454,15 @@
                     },
                     "Right": {
                       "Type": "LITERAL",
-                      "Value": 2
+                      "Value": 2,
+                      "Token": {
+                        "Type": "NUMBER",
+                        "Lexeme": "2",
+                        "Literal": 2,
+                        "Line": 9,
+                        "Start": 163,
+                        "End": 164
+                      }
                     }
                   },
                   "Operator": {
@@ -370,7 +474,15 @@
                   },
                   "Right": {
                     "Type": "LITERAL",
-                    "Value": 10
+                    "Value": 10,
+                    "Token": {
+                      "Type": "NUMBER",
+                      "Lexeme": "10",
+                      "Literal": 10,
+                      "Line": 9,
+                      "Start": 168,
+                      "End": 170
+                    }
                   }
                 }
               },
@@ -409,7 +521,15 @@
                     },
                     "Right": {
                       "Type": "LITERAL",
-                      "Value": 2
+                      "Value": 2,
+                      "Token": {
+                        "Type": "NUMBER",
+                        "Lexeme": "2",
+                        "Literal": 2,
+                        "Line": 10,
+                        "Start": 188,
+                        "End": 189
+                      }
                     }
                   },
                   "Operator": {
@@ -421,7 +541,15 @@
                   },
                   "Right": {
                     "Type": "LITERAL",
-                    "Value": 10
+                    "Value": 10,
+                    "Token": {
+                      "Type": "NUMBER",
+                      "Lexeme": "10",
+                      "Literal": 10,
+                      "Line": 10,
+                      "Start": 193,
+                      "End": 195
+                    }
                   }
                 }
               },
@@ -440,7 +568,15 @@
                     "Type": "BINARY",
                     "Left": {
                       "Type": "LITERAL",
-                      "Value": "My String"
+                      "Value": "My String",
+                      "Token": {
+                        "Type": "STRING",
+                        "Lexeme": "\"My String\"",
+                        "Literal": "My String",
+                        "Line": 11,
+                        "Start": 202,
+                        "End": 213
+                      }
                     },
                     "Operator": {
                       "Type": "AMBERSAND",
@@ -486,11 +622,39 @@
                 }
               }
             ],
+            "LeftBracket": {
+              "Type": "LEFT_PAREN",
+              "Lexeme": "(",
+              "Line": 8,
+              "Start": 145,
+              "End": 146
+            },
+            "RightBracket": {
+              "Type": "RIGHT_PAREN",
+              "Lexeme": ")",
+              "Line": 12,
+              "Start": 244,
+              "End": 245
+            },
             "Wrapped": true
           }
         }
       }
     ],
+    "LeftBracket": {
+      "Type": "LEFT_PAREN",
+      "Lexeme": "(",
+      "Line": 1,
+      "Start": 3,
+      "End": 4
+    },
+    "RightBracket": {
+      "Type": "RIGHT_PAREN",
+      "Lexeme": ")",
+      "Line": 13,
+      "Start": 247,
+      "End": 248
+    },
     "Wrapped": true
   }
 }
