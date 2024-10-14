@@ -7,6 +7,7 @@ import TokenType from "../enums/token-type";
 import Action from "../types/action";
 import Binary from "../types/binary";
 import Expression from "../types/expression";
+import FormattingOptions from "../types/formatting-options";
 import Grouping from "../types/grouping";
 import Identifier from "../types/identifier";
 import Literal from "../types/literal";
@@ -22,12 +23,16 @@ export default class Formatter {
   Expr: Expression;
   Output: string;
   Indent: number;
+  UseTabs: Boolean;
+  NumOfSpaces: number;
 
   //Constructor
-  constructor(pExpr: Expression) {
+  constructor(pExpr: Expression, pFormattingOptions?: FormattingOptions) {
     this.Expr = pExpr;
     this.Output = '';
     this.Indent = 0;
+    this.UseTabs = pFormattingOptions?.useTabs || false;
+    this.NumOfSpaces = pFormattingOptions?.spaces || 2;
   }
 
   //Functions
@@ -115,7 +120,14 @@ export default class Formatter {
     } else if(pIndent === -1) {
       this.Indent--;
     }
-    this.Output += '\n' + '  '.repeat(this.Indent);
+    this.Output += '\n' + this._buildIndentation().repeat(this.Indent);
+  }
+  _buildIndentation() {
+    if(this.UseTabs) {
+      return '\t';
+    } else {
+      return ' '.repeat(this.NumOfSpaces);
+    }
   }
   _append(pMessage: string) {
     this.Output += pMessage;

@@ -11,6 +11,7 @@ import Parser from './processors/parser';
 import Formatter from './processors/formatter';
 import { parseArgs } from 'util';
 import Expression from './types/expression';
+import FormattingOptions from './types/formatting-options';
 
 /*=========================================================
     Functions
@@ -24,8 +25,8 @@ export function parse(pFormulaString: string): Expression {
   return results;
 }
 
-export function format(pFormula: Expression) {
-  const formatter = new Formatter(pFormula);
+export function format(pFormula: Expression, pFormattingOptions?: FormattingOptions) {
+  const formatter = new Formatter(pFormula, pFormattingOptions);
   return formatter.format();
 }
 
@@ -53,6 +54,14 @@ async function init() {
       pretty: {
         type: 'boolean',
         short: 'p'
+      },
+      useTabs: {
+        type: 'boolean',
+        default: false
+      },
+      spaces: {
+        type: 'string',
+        default: '2'
       }
     },
     strict: true
@@ -75,9 +84,12 @@ async function init() {
     const file = await fs.readFile(path.resolve(values.inputDir));
     const expr = parse(file.toString());
     if(values.format.toLowerCase() === 'formula') {
-      output = format(expr);
+      output = format(expr, {
+        useTabs: values.useTabs,
+        spaces: Number(values.spaces) || undefined
+      });
     } else {
-      output = JSON.stringify(expr, undefined, values.pretty && 2);
+      output = JSON.stringify(expr, undefined, values.pretty && (Number(values.spaces) || 2));
     }
     if(values.outputDir) {
       fs.writeFile(path.resolve(values.outputDir), output, 'utf-8');
