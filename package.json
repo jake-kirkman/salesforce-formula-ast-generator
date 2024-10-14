@@ -1,6 +1,6 @@
 {
   "name": "salesforce-formula-ast-generator",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Abstract Syntax Tree (AST) generator for Salesforce Formulas",
   "main": "dist/index.js",
   "bin": {
@@ -12,6 +12,7 @@
   "files": [
     "dist/**"
   ],
+  "types": "./src/index.d.ts",
   "scripts": {
     "test": "jest",
     "build": "tsc",
