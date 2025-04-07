@@ -20,12 +20,14 @@ export default class Scanner {
   Start: number;
   Current: number;
   Line: number;
+  LastNewLine: number;
 
   //Constructor
   constructor(pSource: string) {
     this.Source = pSource;
     this.Tokens = [];
     this.Start = 0;
+    this.LastNewLine = 0;
     this.Current = 0;
     this.Line = 1;
   }
@@ -100,6 +102,7 @@ export default class Scanner {
         break;
       case '\n':
         this.Line++;
+        this.LastNewLine = this.Current;
         break;
       case '\'':
       case '"':
@@ -214,7 +217,7 @@ export default class Scanner {
   }
   _addToken(pType: TokenType, pLiteral?: any): void {
     const text = this.Source.substring(this.Start, this.Current);
-    this.Tokens.push(new Token(pType, text, pLiteral, this.Line, this.Start, this.Current));
+    this.Tokens.push(new Token(pType, text, pLiteral, this.Line, this.Start - this.LastNewLine, this.Current - this.LastNewLine));
   }
 
 }
