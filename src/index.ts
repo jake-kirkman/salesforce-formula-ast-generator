@@ -71,7 +71,7 @@ async function init() {
     console.log('Usage:');
     console.log('salesforce-formula-ast-generator --inputDir path/to/formula/file --outputDir path/to/json/output --format json');
     console.log('salesforce-formula-ast-generator --inputDir path/to/formula/file --outputDir path/to/formula/output --format formula');
-    console.log('Use the --pretty [-p] flag when using JSON format for indentated outputs');
+    console.log('Use the --pretty [-p] flag when using JSON format for indented outputs');
   } else if(!['json', 'formula'].includes(values.format?.toLowerCase())) {
     console.error('format [-f] must be "json" or "formula"');
     process.exit(1);
