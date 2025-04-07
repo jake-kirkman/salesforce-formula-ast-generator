@@ -7,7 +7,6 @@ import Grouping from './types/grouping';
 import Identifier from './types/identifier';
 import Literal from './types/literal';
 import Unary from './types/unary';
-import {format, parse} from './index';
 
 export {
   Action,
@@ -18,7 +17,5 @@ export {
   Grouping,
   Identifier,
   Literal,
-  Unary,
-  format,
-  parse
+  Unary
 }
